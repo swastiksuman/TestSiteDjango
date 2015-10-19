@@ -3,6 +3,10 @@ __author__ = 'Alien'
 from django import forms
 
 class EmailForm(forms.Form):
-    name = forms.CharField(required=True)
-    email = forms.EmailField(required=True)
+
+    name = forms.CharField(required=False)
+    email = forms.EmailField()
+    ip_address = forms.CharField(required=False)
+
+
 

@@ -4,8 +4,7 @@
 
 <h1>Hello, welcome home</h1>
 
-<form>
-
+<form method="POST" action="/home2/"> {% csrf_token %}
     {{form.as_p}}
     <input type="submit" value="Join" class="btn">
 </form>
